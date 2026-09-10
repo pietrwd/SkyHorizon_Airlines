@@ -2,16 +2,7 @@
 
 Projeto da Avaliação Formativa I — Programação para Dispositivos Móveis (USCS).
 
-Implementado em Dart com Null-Safety, cobrindo os 10 exercícios propostos:
-abstração, agregação, construtores nomeados, parâmetros nomeados,
-encapsulamento (tradicional e nativo), métodos de negócio, herança,
-mixins e polimorfismo.
-
-## Como executar
-
-1. Instale o [Dart SDK](https://dart.dev/get-dart).
-2. Clone este repositório.
-3. Execute:
+O propósito é desenvolver, de maneira incremental, o modelo orientado a objetos que controlar ́a as passagens a ́ereas, o registro de passageiros, as plataformas de vendas parceiras e o gerenciamento de passagens de Primeira Classe (VIP) com sistemas integrados de registro de log e auditoria de segurança. Projeto para faculdade.
 
 ```bash
 dart run main.dart
