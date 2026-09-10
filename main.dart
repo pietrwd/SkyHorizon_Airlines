@@ -1,11 +1,5 @@
-// ============================================================
-// Sistema de Emissão de Passagens - SkyHorizon Airlines
-// Avaliação Formativa I - Programação para Dispositivos Móveis
-// ============================================================
-
-// ---------------------------
 // Exercício 1: Classes de Apoio
-// ---------------------------
+
 class Passageiro {
   String? nome;
   String? cpf;
@@ -28,9 +22,8 @@ class Atendente {
   double? salario;
 }
 
-// ---------------------------
+
 // Exercício 2 a 7: Classe Passagem
-// ---------------------------
 class Passagem {
   String? _codigoLocalizador = '';
   Passageiro? passageiro;
@@ -113,9 +106,9 @@ class Passagem {
   }
 }
 
-// ---------------------------
+
 // Exercício 9: Mixins
-// ---------------------------
+
 mixin Logger {
   void log(String mensagem) {
     print(mensagem);
@@ -128,9 +121,9 @@ mixin Auditoria {
   }
 }
 
-// ---------------------------
+
 // Exercício 8, 9 e 10: PassagemPrimeiraClasse
-// ---------------------------
+
 class PassagemPrimeiraClasse extends Passagem with Logger, Auditoria {
   String? loungeAcesso;
 
@@ -159,11 +152,11 @@ class PassagemPrimeiraClasse extends Passagem with Logger, Auditoria {
   }
 }
 
-// ---------------------------
+
 // Exercício 10: main()
-// ---------------------------
+
 void main() {
-  // Criando entidades de apoio
+  
   Passageiro passageiro1 = Passageiro()
     ..nome = 'João da Silva'
     ..cpf = '123.456.789-00'
@@ -217,7 +210,7 @@ void main() {
   print('Código: ${passagemVip.codigoLocalizador}');
   print('Lounge de acesso: ${passagemVip.loungeAcesso}');
   passagemVip.EmitirPassagem();
-  passagemVip.AtualizarPassagem(); // Sobrescrita polimórfica
+  passagemVip.AtualizarPassagem(); 
 
   Passagem consultada = passagemVip.ConsultarPassagem('SH-VIP-001');
   print('Consulta retornou nova instância: ${consultada.codigoLocalizador == '' }');
